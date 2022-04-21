@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Tabuleiros;
+﻿using Tabuleiros;
 
 namespace ProjetoXadrezConsole.Xadrez
 {
@@ -16,6 +11,11 @@ namespace ProjetoXadrezConsole.Xadrez
         public override string ToString()
         {
             return "T";
+        }
+
+        public override bool[,] MovimentosPossiveis()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

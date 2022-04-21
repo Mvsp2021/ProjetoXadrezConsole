@@ -2,6 +2,7 @@
 using ProjetoXadrezConsole.Xadrez;
 using System;
 using Tabuleiros;
+using Xadrez;
 
 namespace ProjetoXadrezConsole
 {
@@ -11,13 +12,21 @@ namespace ProjetoXadrezConsole
         {
             try
             {
+                PartidaDeXadrez partida = new PartidaDeXadrez();
 
-            Tabuleiro tab = new Tabuleiro(8, 8);
+                while (!partida.Terminada)
+                {
+                    Console.Clear();
+                    Tela.ImprimirTabuleiro(partida.tab);
 
-            tab.ColocarPeca(new Torre(tab, Cor.preto), new Posicao(0, 0));
-            tab.ColocarPeca(new Torre(tab, Cor.preto), new Posicao(1, 3));
-            tab.ColocarPeca(new Rei(tab, Cor.preto), new Posicao(2, 4));
-            Tela.ImprimirTabuleiro(tab);
+                    Console.Write("Origem: ");
+                    Posicao origem = Tela.LerPosicaoXadrez().ToPosicao();
+                    Console.Write("Destino: ");
+                    Posicao destino = Tela.LerPosicaoXadrez().ToPosicao();
+
+                    partida.ExecutarMovimento(origem, destino);
+                }
+
             }
             catch (TabuleiroException e)
             {
