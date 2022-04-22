@@ -19,11 +19,10 @@ namespace ProjetoXadrezConsole
                     {
 
                         Console.Clear();
-                        Tela.ImprimirTabuleiro(partida.Tab);
+                        Tela.ImprimirPartida(partida);
 
                         Console.WriteLine();
-                        Console.WriteLine("Turno: " + partida.Turno);
-                        Console.WriteLine("Aguardando jogada: " + partida.JogadorAtual);
+                
 
                         Console.WriteLine();
                         Console.Write("Origem: ");
@@ -40,7 +39,7 @@ namespace ProjetoXadrezConsole
                     }
                     catch (TabuleiroException e)
                     {
-                        Console.WriteLine(e.Message);
+                        Console.WriteLine(e.Message + "XXXXX");
                         Console.ReadLine();
                     }
                 }
@@ -48,7 +47,7 @@ namespace ProjetoXadrezConsole
             }
             catch (TabuleiroException e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine(e.Message + "OK");
             }
         }
     }
