@@ -19,6 +19,7 @@ namespace ProjetoXadrezConsole
                     {
 
                         Console.Clear();
+                     
                         Tela.ImprimirPartida(partida);
 
                         Console.WriteLine();

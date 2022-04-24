@@ -55,6 +55,9 @@ namespace ProjetoXadrezConsole
         }
         public static void ImprimirTabuleiro(Tabuleiro tab)
         {
+            Console.WriteLine();
+            Console.WriteLine("************Jogo de Xadrez**************");
+            Console.WriteLine();
             for (int i = 0; i < tab.Linhas; i++)
             {
                 Console.Write(8 - i + " |  ");
@@ -64,11 +67,15 @@ namespace ProjetoXadrezConsole
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("---------------------");
             Console.WriteLine("     a b c d e f g h");
         }
 
         public static void ImprimirTabuleiro(Tabuleiro tab, bool[,] posicoesPossiveis)
         {
+            Console.WriteLine();
+            Console.WriteLine("************Jogo de Xadrez**************");
+            Console.WriteLine();
             ConsoleColor fundoOriginal = Console.BackgroundColor;
             ConsoleColor fundoAlterado = ConsoleColor.DarkGray;
 
@@ -90,6 +97,7 @@ namespace ProjetoXadrezConsole
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("---------------------");
             Console.WriteLine("     a b c d e f g h");
             Console.BackgroundColor = fundoOriginal;
         }
