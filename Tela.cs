@@ -118,8 +118,6 @@ namespace ProjetoXadrezConsole
             }
             else
             {
-
-
                 if (peca.Cor == Cor.branco)
                 {
                     Console.Write(peca);

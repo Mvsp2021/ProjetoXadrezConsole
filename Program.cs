@@ -17,14 +17,9 @@ namespace ProjetoXadrezConsole
                 {
                     try
                     {
-
                         Console.Clear();
-                     
                         Tela.ImprimirPartida(partida);
-
                         Console.WriteLine();
-                
-
                         Console.WriteLine();
                         Console.Write("Origem: ");
                         Posicao origem = Tela.LerPosicaoXadrez().ToPosicao();

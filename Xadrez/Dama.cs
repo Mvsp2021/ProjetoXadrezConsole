@@ -73,7 +73,7 @@ namespace ProjetoXadrezConsole.Xadrez
                 pos.DefinirValores(pos.Linha + 1, pos.Coluna);
             }
 
-            // NO
+            // nordeste
             pos.DefinirValores(Posicao.Linha - 1, Posicao.Coluna - 1);
             while (Tabuleiro.PosicaoValida(pos) && PodeMover(pos))
             {
@@ -85,7 +85,7 @@ namespace ProjetoXadrezConsole.Xadrez
                 pos.DefinirValores(pos.Linha - 1, pos.Coluna - 1);
             }
 
-            // NE
+            // noroeste
             pos.DefinirValores(Posicao.Linha - 1, Posicao.Coluna + 1);
             while (Tabuleiro.PosicaoValida(pos) && PodeMover(pos))
             {
@@ -97,7 +97,7 @@ namespace ProjetoXadrezConsole.Xadrez
                 pos.DefinirValores(pos.Linha - 1, pos.Coluna + 1);
             }
 
-            // SE
+            // sudeste
             pos.DefinirValores(Posicao.Linha + 1, Posicao.Coluna + 1);
             while (Tabuleiro.PosicaoValida(pos) && PodeMover (pos))
             {
@@ -109,7 +109,7 @@ namespace ProjetoXadrezConsole.Xadrez
                 pos.DefinirValores(pos.Linha + 1, pos.Coluna + 1);
             }
 
-            // SO
+            // sudoeste
             pos.DefinirValores(Posicao.Linha + 1, Posicao.Coluna - 1);
             while (Tabuleiro.PosicaoValida(pos) && PodeMover(pos))
             {

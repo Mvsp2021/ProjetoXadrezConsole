@@ -57,7 +57,8 @@ namespace ProjetoXadrezConsole.Xadrez
                     mat[pos.Linha, pos.Coluna] = true;
                 }
 
-                //# Jogada Especial En Passant
+                // #Jogada Especial En Passant
+
                 if (Posicao.Linha == 3)
                 {
                     Posicao esquerda = new Posicao(Posicao.Linha, Posicao.Coluna - 1);
@@ -97,7 +98,8 @@ namespace ProjetoXadrezConsole.Xadrez
                     mat[pos.Linha, pos.Coluna] = true;
                 }
 
-                //# Jogada Especial En Passant
+                // #Jogada Especial En Passant
+
                 if (Posicao.Linha == 4)
                 {
                     Posicao esquerda = new Posicao(Posicao.Linha, Posicao.Coluna - 1);
@@ -112,7 +114,6 @@ namespace ProjetoXadrezConsole.Xadrez
                         mat[direita.Linha + 1, direita.Coluna] = true;
                     }
                 }
-
             }
             return mat;
         }
